@@ -832,7 +832,7 @@
         color: var(--soft);
       }
 
-      /* ─── PRICING ─── */
+      /* ───  ─── */
       .pricing {
         background: linear-gradient(
           160deg,
@@ -1257,61 +1257,61 @@
     </style>
   </head>
   <body>
-    <div
+    <a
+      href="#pricing"
       style="
+        text-decoration: none;
+        display: block;
         background: #fff;
         border-bottom: 3px solid var(--rose);
         text-align: center;
-        padding: 14px 24px;
+        padding: 10px 16px;
         position: sticky;
         top: 0;
         z-index: 999;
         box-shadow: 0 4px 16px rgba(194, 24, 91, 0.15);
       "
     >
-      <span style="font-size: 15px; font-weight: 700; color: var(--dark)"
-        >🔥 Precio de lanzamiento termina el</span
+      <span style="font-size: 13px; font-weight: 700; color: var(--dark)"
+        >🔥</span
       >
       <span
         style="
           background: var(--rose);
           color: #fff;
           border-radius: 100px;
-          padding: 4px 16px;
-          margin: 0 8px;
-          font-size: 15px;
+          padding: 3px 12px;
+          margin: 0 6px;
+          font-size: 13px;
           font-weight: 800;
         "
-        >31 de Mayo</span
+        >31 de mayo</span
       >
-      <span style="font-size: 15px; font-weight: 700; color: var(--rose)"
-        >$397 MXN</span
+      <span style="font-size: 13px; font-weight: 700; color: var(--rose)"
+        >$397</span
       >
-      <span style="font-size: 14px; color: var(--mid); margin: 0 6px"
-        >en vez de</span
-      >
+      <span style="font-size: 12px; color: var(--mid); margin: 0 4px">→</span>
       <span
         style="
-          font-size: 15px;
-          font-weight: 700;
+          font-size: 12px;
           text-decoration: line-through;
           color: var(--soft);
         "
-        >$697 MXN</span
+        >$697</span
       >
       <span
         style="
           background: var(--gold);
           color: #fff;
           border-radius: 100px;
-          padding: 4px 14px;
-          margin-left: 8px;
-          font-size: 13px;
+          padding: 3px 10px;
+          margin-left: 6px;
+          font-size: 11px;
           font-weight: 800;
         "
         >43% OFF</span
       >
-    </div>
+    </a>
     <!-- ═══ HERO ═══ -->
     <section class="hero">
       <div class="hero-left">
@@ -1717,6 +1717,145 @@
               Bonos incluidos sin costo adicional
             </div>
           </div>
+          <div
+            style="
+              background: var(--rose-light);
+              border-radius: 16px;
+              padding: 16px 12px;
+              margin-bottom: 24px;
+              text-align: center;
+            "
+          >
+            <p
+              style="
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--rose-deep);
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 10px;
+              "
+            >
+              ⏳ El precio sube en
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+                flex-wrap: nowrap;
+              "
+            >
+              <div
+                style="
+                  background: var(--rose);
+                  color: #fff;
+                  border-radius: 10px;
+                  padding: 8px 10px;
+                  min-width: 56px;
+                  flex: 1;
+                  max-width: 72px;
+                  text-align: center;
+                "
+              >
+                <div
+                  id="cnt-days"
+                  style="
+                    font-family: &quot;Cormorant Garamond&quot;, serif;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 1;
+                  "
+                >
+                  00
+                </div>
+                <div style="font-size: 10px; opacity: 0.85; margin-top: 2px">
+                  días
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--rose);
+                  color: #fff;
+                  border-radius: 10px;
+                  padding: 8px 10px;
+                  min-width: 56px;
+                  flex: 1;
+                  max-width: 72px;
+                  text-align: center;
+                "
+              >
+                <div
+                  id="cnt-hours"
+                  style="
+                    font-family: &quot;Cormorant Garamond&quot;, serif;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 1;
+                  "
+                >
+                  00
+                </div>
+                <div style="font-size: 10px; opacity: 0.85; margin-top: 2px">
+                  horas
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--rose);
+                  color: #fff;
+                  border-radius: 10px;
+                  padding: 8px 10px;
+                  min-width: 56px;
+                  flex: 1;
+                  max-width: 72px;
+                  text-align: center;
+                "
+              >
+                <div
+                  id="cnt-mins"
+                  style="
+                    font-family: &quot;Cormorant Garamond&quot;, serif;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 1;
+                  "
+                >
+                  00
+                </div>
+                <div style="font-size: 10px; opacity: 0.85; margin-top: 2px">
+                  minutos
+                </div>
+              </div>
+              <div
+                style="
+                  background: var(--rose);
+                  color: #fff;
+                  border-radius: 10px;
+                  padding: 8px 10px;
+                  min-width: 56px;
+                  flex: 1;
+                  max-width: 72px;
+                  text-align: center;
+                "
+              >
+                <div
+                  id="cnt-secs"
+                  style="
+                    font-family: &quot;Cormorant Garamond&quot;, serif;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 1;
+                  "
+                >
+                  00
+                </div>
+                <div style="font-size: 10px; opacity: 0.85; margin-top: 2px">
+                  segundos
+                </div>
+              </div>
+            </div>
+          </div>
           <a
             href="https://buy.stripe.com/cNi8wP1lU2S4ccEfYz8EM08"
             target="_blank"
@@ -1907,235 +2046,114 @@
 
     <!-- ═══ FLOATING ═══ -->
     <div class="floating" id="fab">
-      <div
-        style="
-          background: var(--rose-light);
-          border-radius: 16px;
-          padding: 20px;
-          margin-bottom: 24px;
-          text-align: center;
-        "
-      >
-        <p
-          style="
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--rose-deep);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 12px;
-          "
-        >
-          ⏳ El precio sube en
-        </p>
-        <div style="display: flex; justify-content: center; gap: 12px">
-          <div
-            style="
-              background: var(--rose);
-              color: #fff;
-              border-radius: 12px;
-              padding: 10px 16px;
-              min-width: 64px;
-            "
-          >
-            <div
-              id="cnt-days"
-              style="
-                font-family: &quot;Cormorant Garamond&quot;, serif;
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 1;
-              "
-            >
-              00
-            </div>
-            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
-              días
-            </div>
-          </div>
-          <div
-            style="
-              background: var(--rose);
-              color: #fff;
-              border-radius: 12px;
-              padding: 10px 16px;
-              min-width: 64px;
-            "
-          >
-            <div
-              id="cnt-hours"
-              style="
-                font-family: &quot;Cormorant Garamond&quot;, serif;
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 1;
-              "
-            >
-              00
-            </div>
-            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
-              horas
-            </div>
-          </div>
-          <div
-            style="
-              background: var(--rose);
-              color: #fff;
-              border-radius: 12px;
-              padding: 10px 16px;
-              min-width: 64px;
-            "
-          >
-            <div
-              id="cnt-mins"
-              style="
-                font-family: &quot;Cormorant Garamond&quot;, serif;
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 1;
-              "
-            >
-              00
-            </div>
-            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
-              minutos
-            </div>
-          </div>
-          <div
-            style="
-              background: var(--rose);
-              color: #fff;
-              border-radius: 12px;
-              padding: 10px 16px;
-              min-width: 64px;
-            "
-          >
-            <div
-              id="cnt-secs"
-              style="
-                font-family: &quot;Cormorant Garamond&quot;, serif;
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 1;
-              "
-            >
-              00
-            </div>
-            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
-              segundos
-            </div>
-          </div>
-        </div>
-      </div>
       <a href="https://buy.stripe.com/cNi8wP1lU2S4ccEfYz8EM08"
         >🛒 Obtener por $397 MXN</a
       >
     </div>
-
     <script>
-      // Reveal on scroll
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e, i) => {
-            if (e.isIntersecting) {
-              setTimeout(() => e.target.classList.add("visible"), i * 55);
-              io.unobserve(e.target);
+            // Reveal on scroll
+            const io = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((e, i) => {
+                  if (e.isIntersecting) {
+                    setTimeout(() => e.target.classList.add("visible"), i * 55);
+                    io.unobserve(e.target);
+                  }
+                });
+              },
+              { threshold: 0.08 },
+            );
+            document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+            // FAQ
+            function toggleFaq(btn) {
+              const body = btn.nextElementSibling;
+              const open = btn.classList.contains("open");
+              document.querySelectorAll(".faq-btn.open").forEach((b) => {
+                b.classList.remove("open");
+                b.nextElementSibling.classList.remove("open");
+              });
+              if (!open) {
+                btn.classList.add("open");
+                body.classList.add("open");
+              }
             }
-          });
-        },
-        { threshold: 0.08 },
-      );
-      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-      // FAQ
-      function toggleFaq(btn) {
-        const body = btn.nextElementSibling;
-        const open = btn.classList.contains("open");
-        document.querySelectorAll(".faq-btn.open").forEach((b) => {
-          b.classList.remove("open");
-          b.nextElementSibling.classList.remove("open");
-        });
-        if (!open) {
-          btn.classList.add("open");
-          body.classList.add("open");
-        }
-      }
+            // Floating CTA
+            // Floating CTA
+            const hero = document.querySelector(".hero");
+            const fab = document.getElementById("fab");
+            window.addEventListener("scroll", () => {
+              fab.classList.toggle("show", hero.getBoundingClientRect().bottom < 0);
+            });
 
-      // Floating CTA
-      // Floating CTA
-      const hero = document.querySelector(".hero");
-      const fab = document.getElementById("fab");
-      window.addEventListener("scroll", () => {
-        fab.classList.toggle("show", hero.getBoundingClientRect().bottom < 0);
-      });
+            // Contador regresivo
+            function updateCountdown() {
+              const deadline = new Date("2026-05-31T23:59:59");
+              const now = new Date();
+              const diff = deadline - now;
+              if (diff <= 0) {
+                document.getElementById("cnt-days").textContent = "00";
+                document.getElementById("cnt-hours").textContent = "00";
+                document.getElementById("cnt-mins").textContent = "00";
+                document.getElementById("cnt-secs").textContent = "00";
+                return;
+              }
+              const days = Math.floor(diff / 86400000);
+              const hours = Math.floor((diff % 86400000) / 3600000);
+              const mins = Math.floor((diff % 3600000) / 60000);
+              const secs = Math.floor((diff % 60000) / 1000);
+              document.getElementById("cnt-days").textContent = String(days).padStart(2, "0");
+              document.getElementById("cnt-hours").textContent = String(hours).padStart(2, "0");
+              document.getElementById("cnt-mins").textContent = String(mins).padStart(2, "0");
+              document.getElementById("cnt-secs").textContent = String(secs).padStart(2, "0");
+            }
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
 
-      // Contador regresivo
-      function updateCountdown() {
-        const deadline = new Date("2026-05-31T23:59:59");
-        const now = new Date();
-        const diff = deadline - now;
-        if (diff <= 0) {
-          document.getElementById("cnt-days").textContent = "00";
-          document.getElementById("cnt-hours").textContent = "00";
-          document.getElementById("cnt-mins").textContent = "00";
-          document.getElementById("cnt-secs").textContent = "00";
-          return;
-        }
-        const days = Math.floor(diff / 86400000);
-        const hours = Math.floor((diff % 86400000) / 3600000);
-        const mins = Math.floor((diff % 3600000) / 60000);
-        const secs = Math.floor((diff % 60000) / 1000);
-        document.getElementById("cnt-days").textContent = String(days).padStart(
-          2,
-          "0",
-        );
-        document.getElementById("cnt-hours").textContent = String(
-          hours,
-        ).padStart(2, "0");
-        document.getElementById("cnt-mins").textContent = String(mins).padStart(
-          2,
-          "0",
-        );
-        document.getElementById("cnt-secs").textContent = String(secs).padStart(
-          2,
-          "0",
-        );
-      }
-      setInterval(updateCountdown, 1000);
-      updateCountdown();
+            // Popup de salida
+            let exitShown = false;
+            document.addEventListener("mouseleave", (e) => {
+              if (e.clientY < 10 && !exitShown) {
+                exitShown = true;
+                document.getElementById("exit-popup").style.display = "flex";
+              }
+            });
 
-      // Popup de salida
-      let exitShown = false;
-      document.addEventListener("mouseleave", (e) => {
-        if (e.clientY < 10 && !exitShown) {
-          exitShown = true;
-          document.getElementById("exit-popup").style.display = "flex";
-        }
-      });
+            // Popup en móvil — se activa al hacer scroll hacia arriba
+            let lastScroll = 0;
+            window.addEventListener("scroll", () => {
+              const current = window.scrollY;
+              if (lastScroll - current > 60 && current > 400 && !exitShown) {
+                exitShown = true;
+                document.getElementById("exit-popup").style.display = "flex";
+              }
+              lastScroll = current;
+            });
 
-      // Notificación de actividad
-      const spNames = [
-        "Alguien en Ciudad de México adquirió la guía",
-        "Alguien en Guadalajara adquirió la guía",
-        "Alguien en Monterrey adquirió la guía",
-        "Alguien en Puebla adquirió la guía",
-        "Alguien en Colima adquirió la guía",
-        "Alguien en Querétaro adquirió la guía",
-        "Alguien en León adquirió la guía",
-      ];
-      function showSocialProof() {
-        const el = document.getElementById("social-proof");
-        const text = document.getElementById("sp-text");
-        text.textContent = spNames[Math.floor(Math.random() * spNames.length)];
-        el.style.display = "block";
-        setTimeout(() => {
-          el.style.display = "none";
-        }, 5000);
-      }
-      setTimeout(() => {
-        showSocialProof();
-        setInterval(showSocialProof, 45000);
-      }, 15000);
+            // Notificación de actividad
+            const spNames = [
+              "Alguien en Ciudad de México adquirió la guía",
+              "Alguien en Guadalajara adquirió la guía",
+              "Alguien en Monterrey adquirió la guía",
+              "Alguien en Puebla adquirió la guía",
+              "Alguien en Colima adquirió la guía",
+              "Alguien en Querétaro adquirió la guía",
+              "Alguien en León adquirió la guía",
+            ];
+            function showSocialProof() {
+              const el = document.getElementById("social-proof");
+              const text = document.getElementById("sp-text");
+              text.textContent = spNames[Math.floor(Math.random() * spNames.length)];
+              el.style.display = "block";
+              setTimeout(() => {
+                el.style.display = "none";
+              }, 5000);
+            }
+            setTimeout(() => {
+              showSocialProof();
+              setInterval(showSocialProof, 45000);
+            }, 15000);
     </script>
     <div
       id="exit-popup"
