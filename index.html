@@ -1200,7 +1200,7 @@
         color: rgba(255, 255, 255, 0.7);
       }
 
-      /* ─── FLOATING ─── */
+      /* ───  ─── */
       .floating {
         position: fixed;
         bottom: 24px;
@@ -1257,6 +1257,61 @@
     </style>
   </head>
   <body>
+    <div
+      style="
+        background: #fff;
+        border-bottom: 3px solid var(--rose);
+        text-align: center;
+        padding: 14px 24px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 4px 16px rgba(194, 24, 91, 0.15);
+      "
+    >
+      <span style="font-size: 15px; font-weight: 700; color: var(--dark)"
+        >🔥 Precio de lanzamiento termina el</span
+      >
+      <span
+        style="
+          background: var(--rose);
+          color: #fff;
+          border-radius: 100px;
+          padding: 4px 16px;
+          margin: 0 8px;
+          font-size: 15px;
+          font-weight: 800;
+        "
+        >31 de Mayo</span
+      >
+      <span style="font-size: 15px; font-weight: 700; color: var(--rose)"
+        >$397 MXN</span
+      >
+      <span style="font-size: 14px; color: var(--mid); margin: 0 6px"
+        >en vez de</span
+      >
+      <span
+        style="
+          font-size: 15px;
+          font-weight: 700;
+          text-decoration: line-through;
+          color: var(--soft);
+        "
+        >$697 MXN</span
+      >
+      <span
+        style="
+          background: var(--gold);
+          color: #fff;
+          border-radius: 100px;
+          padding: 4px 14px;
+          margin-left: 8px;
+          font-size: 13px;
+          font-weight: 800;
+        "
+        >43% OFF</span
+      >
+    </div>
     <!-- ═══ HERO ═══ -->
     <section class="hero">
       <div class="hero-left">
@@ -1271,11 +1326,26 @@
           <a
             href="https://buy.stripe.com/cNi8wP1lU2S4ccEfYz8EM08"
             class="btn-hero"
-            >Descargar ahora →</a
+            >🛒 Quiero mi guía · $397 MXN</a
           >
           <p class="hero-price-line">
             <s>$697 MXN</s> &nbsp;→&nbsp;
             <strong>$397 MXN · Precio de lanzamiento</strong>
+          </p>
+          <p class="hero-price-line" style="margin-top: 8px">
+            <span
+              style="
+                background: var(--gold);
+                color: #fff;
+                border-radius: 100px;
+                padding: 3px 14px;
+                font-size: 13px;
+                font-weight: 800;
+                margin-right: 8px;
+              "
+              >⏳ Solo hasta el 31 de Mayo</span
+            >
+            Acceso inmediato después de tu compra
           </p>
         </div>
       </div>
@@ -1544,6 +1614,7 @@
               >Licenciada en Nutrición y Dietética (2016)</span
             >
             <span class="author-tag">Maestra en Educación (2018)</span>
+            <span class="author-tag">Certificación ISAK 1</span>
             <span class="author-tag"
               >Información basada en evidencia científica actualizada</span
             >
@@ -1604,7 +1675,7 @@
               <div class="testi-avatar">👩</div>
               <div>
                 <div class="testi-name">[ Cecilia C. ]</div>
-                <div class="testi-role">Planeación de embarazo</div>
+                <div class="testi-role">Planeando embarazo</div>
               </div>
             </div>
           </div>
@@ -1639,7 +1710,8 @@
               Capítulos de sueño, microbiota, suelo pélvico y más
             </div>
             <div class="price-list-item">
-              53 referencias científicas verificadas
+              Basado en evidencia científica actualizada y aterrizado a la vida
+              real
             </div>
             <div class="price-list-item">
               Bonos incluidos sin costo adicional
@@ -1656,11 +1728,28 @@
             Pago seguro vía Stripe · Acceso instantáneo · Una sola vez, para
             siempre
           </p>
+          <div
+            style="
+              background: var(--gold-light);
+              border: 2px solid var(--gold);
+              border-radius: 14px;
+              padding: 12px 20px;
+              margin-top: 16px;
+              text-align: center;
+            "
+          >
+            <span style="font-size: 15px; font-weight: 800; color: var(--gold)"
+              >⏳ Este precio termina el 31 de mayo</span
+            ><br />
+            <span style="font-size: 13px; color: var(--mid)"
+              >Después sube a $697 MXN</span
+            >
+          </div>
           <div class="price-guarantee">
             <strong>🔒 Sin riesgo:</strong> Pago 100% seguro y acceso inmediato
             después de tu compra. Además, esta guía seguirá actualizándose y
-            quienes ya la adquirieron también tendrán acceso a futuras mejoras y
-            contenido nuevo. Si tienes alguna duda o sugerencia, siempre puedes
+            quienes ya la adquirieron tendrán acceso a futuras mejoras y
+            actualizaciones. Si tienes alguna duda o sugerencia, siempre puedes
             escribirme 💛
           </div>
         </div>
@@ -1781,13 +1870,11 @@
     <section class="final-cta">
       <div class="container">
         <h2 class="section-h2 reveal">
-          Tu cuerpo está haciendo algo<br /><em
-            >verdaderamente extraordinario.</em
-          >
+          Estás haciendo algo<br /><em>verdaderamente extraordinario.</em>
         </h2>
         <p class="reveal">
-          Dáselo con la información que realmente merece.<br />Sin mitos. Sin
-          miedo. Sin adivinar.
+          Mereces vivirlo con información real, sin mitos y sin adivinar.<br />Esta
+          guía es para eso.
         </p>
         <div class="reveal">
           <a
@@ -1820,6 +1907,126 @@
 
     <!-- ═══ FLOATING ═══ -->
     <div class="floating" id="fab">
+      <div
+        style="
+          background: var(--rose-light);
+          border-radius: 16px;
+          padding: 20px;
+          margin-bottom: 24px;
+          text-align: center;
+        "
+      >
+        <p
+          style="
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--rose-deep);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+          "
+        >
+          ⏳ El precio sube en
+        </p>
+        <div style="display: flex; justify-content: center; gap: 12px">
+          <div
+            style="
+              background: var(--rose);
+              color: #fff;
+              border-radius: 12px;
+              padding: 10px 16px;
+              min-width: 64px;
+            "
+          >
+            <div
+              id="cnt-days"
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1;
+              "
+            >
+              00
+            </div>
+            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
+              días
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--rose);
+              color: #fff;
+              border-radius: 12px;
+              padding: 10px 16px;
+              min-width: 64px;
+            "
+          >
+            <div
+              id="cnt-hours"
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1;
+              "
+            >
+              00
+            </div>
+            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
+              horas
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--rose);
+              color: #fff;
+              border-radius: 12px;
+              padding: 10px 16px;
+              min-width: 64px;
+            "
+          >
+            <div
+              id="cnt-mins"
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1;
+              "
+            >
+              00
+            </div>
+            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
+              minutos
+            </div>
+          </div>
+          <div
+            style="
+              background: var(--rose);
+              color: #fff;
+              border-radius: 12px;
+              padding: 10px 16px;
+              min-width: 64px;
+            "
+          >
+            <div
+              id="cnt-secs"
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1;
+              "
+            >
+              00
+            </div>
+            <div style="font-size: 11px; opacity: 0.85; margin-top: 2px">
+              segundos
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="https://buy.stripe.com/cNi8wP1lU2S4ccEfYz8EM08"
         >🛒 Obtener por $397 MXN</a
       >
@@ -1855,11 +2062,215 @@
       }
 
       // Floating CTA
+      // Floating CTA
       const hero = document.querySelector(".hero");
       const fab = document.getElementById("fab");
       window.addEventListener("scroll", () => {
         fab.classList.toggle("show", hero.getBoundingClientRect().bottom < 0);
       });
+
+      // Contador regresivo
+      function updateCountdown() {
+        const deadline = new Date("2026-05-31T23:59:59");
+        const now = new Date();
+        const diff = deadline - now;
+        if (diff <= 0) {
+          document.getElementById("cnt-days").textContent = "00";
+          document.getElementById("cnt-hours").textContent = "00";
+          document.getElementById("cnt-mins").textContent = "00";
+          document.getElementById("cnt-secs").textContent = "00";
+          return;
+        }
+        const days = Math.floor(diff / 86400000);
+        const hours = Math.floor((diff % 86400000) / 3600000);
+        const mins = Math.floor((diff % 3600000) / 60000);
+        const secs = Math.floor((diff % 60000) / 1000);
+        document.getElementById("cnt-days").textContent = String(days).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("cnt-hours").textContent = String(
+          hours,
+        ).padStart(2, "0");
+        document.getElementById("cnt-mins").textContent = String(mins).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("cnt-secs").textContent = String(secs).padStart(
+          2,
+          "0",
+        );
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Popup de salida
+      let exitShown = false;
+      document.addEventListener("mouseleave", (e) => {
+        if (e.clientY < 10 && !exitShown) {
+          exitShown = true;
+          document.getElementById("exit-popup").style.display = "flex";
+        }
+      });
+
+      // Notificación de actividad
+      const spNames = [
+        "Alguien en Ciudad de México adquirió la guía",
+        "Alguien en Guadalajara adquirió la guía",
+        "Alguien en Monterrey adquirió la guía",
+        "Alguien en Puebla adquirió la guía",
+        "Alguien en Colima adquirió la guía",
+        "Alguien en Querétaro adquirió la guía",
+        "Alguien en León adquirió la guía",
+      ];
+      function showSocialProof() {
+        const el = document.getElementById("social-proof");
+        const text = document.getElementById("sp-text");
+        text.textContent = spNames[Math.floor(Math.random() * spNames.length)];
+        el.style.display = "block";
+        setTimeout(() => {
+          el.style.display = "none";
+        }, 5000);
+      }
+      setTimeout(() => {
+        showSocialProof();
+        setInterval(showSocialProof, 45000);
+      }, 15000);
     </script>
+    <div
+      id="exit-popup"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fff;
+          border-radius: 24px;
+          padding: 48px 40px;
+          max-width: 440px;
+          width: 90%;
+          text-align: center;
+          position: relative;
+        "
+      >
+        <button
+          onclick="document.getElementById('exit-popup').style.display = 'none'"
+          style="
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            color: var(--soft);
+          "
+        >
+          ✕
+        </button>
+        <div style="font-size: 40px; margin-bottom: 16px">⏳</div>
+        <h3
+          style="
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+          "
+        >
+          Antes de irte...
+        </h3>
+        <p
+          style="
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--mid);
+            margin-bottom: 8px;
+          "
+        >
+          Recuerda que el precio de lanzamiento de
+          <strong style="color: var(--rose)">$397 MXN</strong> termina el 31 de
+          mayo.
+        </p>
+        <p style="font-size: 15px; color: var(--soft); margin-bottom: 28px">
+          Después sube a $697 MXN
+        </p>
+        <a
+          href="https://buy.stripe.com/cNi8wP1lU2S4ccEfYz8EM08"
+          target="_blank"
+          class="btn-buy"
+          style="display: flex; margin-bottom: 14px"
+        >
+          🛒 Quiero mi guía ahora · $397 MXN
+        </a>
+        <button
+          onclick="document.getElementById('exit-popup').style.display = 'none'"
+          style="
+            background: none;
+            border: none;
+            font-size: 14px;
+            color: var(--soft);
+            cursor: pointer;
+            text-decoration: underline;
+          "
+        >
+          No, prefiero pagar más después
+        </button>
+      </div>
+    </div>
+    <div
+      id="social-proof"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 90px;
+        left: 24px;
+        background: #fff;
+        border-radius: 14px;
+        padding: 14px 18px;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+        border-left: 4px solid var(--rose);
+        max-width: 280px;
+        z-index: 998;
+        animation: fadeUp 0.5s ease;
+      "
+    >
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div
+          style="
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--rose-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+          "
+        >
+          🤰🏻
+        </div>
+        <div>
+          <p
+            id="sp-text"
+            style="
+              font-size: 13px;
+              font-weight: 600;
+              color: var(--dark);
+              margin-bottom: 2px;
+            "
+          ></p>
+          <p style="font-size: 12px; color: var(--soft)">hace unos minutos</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
